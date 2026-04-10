@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+.container h2 {
+  margin-bottom: 20px;
+}
+.container form {
+  margin-bottom: 20px;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #215d9e;
+}
+
+.task-list {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 350px;
+  overflow: auto;
+}
+.task {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+.task-title {
+  font-weight: bold;
+}
+
+.low {
+  color: green;
+}
+.medium {
+  color: orange;
+}
+.high {
+  color: red;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.actions button {
+  width: 48%;
+  margin-top: 5px;
+}
+
+#message {
+  color: red;
+  font-size: 15px;
+}
+#message p {
+  margin: 5px;
+}

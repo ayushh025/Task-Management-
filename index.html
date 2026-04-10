@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Task Manager</h2>
+      <!-- Form -->
+      <form action="" id="form" autocomplete="off">
+        <input type="text" placeholder="Title" id="title" />
+        <input type="text" placeholder="Description" id="description" />
+        <input type="date" id="date" />
+
+        <select id="priority">
+          <option selected disabled value="priority">Priority</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <div id="message"></div>
+        <button type="submit" id="submit-btn">Add Task</button>
+      </form>
+
+      <!-- Filter -->
+      <h3>Filter</h3>
+      <select id="filter-task">
+        <option selected value="all">All</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <!-- Task List -->
+      <h3>Tasks</h3>
+
+      <div class="task-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
